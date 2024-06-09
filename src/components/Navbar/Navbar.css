@@ -1,0 +1,15 @@
+.navbar{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-bottom: 2px solid black;
+}
+.navbar img{
+    width: 240px;
+}
+
+@media (max-width:1050px) {
+    .navbar img{
+        width: 200px;
+    }
+}

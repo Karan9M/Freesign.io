@@ -1,0 +1,93 @@
+.top-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.top-buttons label{
+    font-size: 22px;
+    font-weight: 500;
+}
+.top-buttons input{
+    background: none;
+    outline: none;
+    border: none;
+}
+.canvas{
+    border: 5px solid black;
+    margin-top: 25px;
+}
+.canvas canvas{
+    height: 50vh;
+    width: 100%;
+}
+.bottom-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0px 70px; */
+    margin-top: 25px;
+}
+.bottom-buttons button{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#enter-canvas-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 40px;
+    color: white;
+  }
+
+
+.fullscreen .top-buttons, .fullscreen .bottom-buttons {
+    display: none;
+  }
+
+
+.maincontent.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+  }
+  .maincontent{
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  
+@media (max-width:750px) {
+    .canvas canvas{
+        height: 500px;
+    }
+    .top-buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .top-buttons label{
+        font-size: 25px;
+    }
+    .top-buttons input{
+        width: 50px;
+    }
+    .bottom-buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
